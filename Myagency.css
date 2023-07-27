@@ -1,0 +1,154 @@
+/* for laptop screen */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.logo>img {
+    height: 5rem;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+}
+
+.title {
+    left: 5%;
+    position: absolute;
+    top: 25%;
+    color: white;
+}
+
+.title>h1 {
+    font-size: 7rem;
+}
+
+.title p {
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 5%;
+}
+
+.Agency {
+    color: #FFB6C1;
+}
+
+.services {
+    color: #87CEEB;
+}
+
+.shape_1 {
+    height: 700px;
+    width: 600px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    position: absolute;
+    border-radius: 10%;
+    left: 60%;
+    top: 5%;
+
+}
+
+.our-services{
+    color: white;
+    position: absolute;
+    left: 240px;
+    top: 5px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 89%;
+}
+
+.service-image{
+    height: 160px;
+    width: 160px;
+    border-radius:10%;
+    margin:25px;
+    float:left;
+    transition: transform 2s ease;
+  }
+  .service-image:hover{
+    transform: scale(1.2);
+  }
+ .content{
+    margin-top:10%;
+    width:100%;
+ }
+  .second-box{
+    clear:left;
+  }
+  .third-box{
+    clear:left;
+  }
+  .s-title{
+    text-transform:capitalize;
+  }
+  .s-desc{
+    font-style: oblique;
+  }
+
+/* for phone screen */
+@media (min-width:320px) and (max-width:480px){
+    .logo>img {
+        height: 1rem;
+        left: 2%;
+        top: 1%;
+    }
+    .title {
+        left: 2%;
+        top: 7%;
+        margin-left:25px;
+    }
+    
+    .title>h1 {
+      font-size: 3rem;
+    }
+    .title p {
+        font-size:15px;
+        margin-top: 2%;
+    }
+    .shape_1 {
+    height:910px;
+    width:320px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    position: absolute;
+    border-radius:1%;
+    left:0;
+    top: 60%;
+}
+.our-services{
+    color: white;
+    position: absolute;
+    left: 80px;
+    top: 5px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 89%;
+}
+
+.service-image{
+    height: 160px;
+    width: 160px;
+    border-radius:10%;
+    margin-left:22%;
+    margin-top:5%;
+    float:none;
+    margin-bottom:5%;
+    object-fit: cover;
+  }
+ .content{
+    margin-left:1%;
+    margin-top:0;
+    width:100%;
+ }
+}
